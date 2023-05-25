@@ -1,3 +1,17 @@
-const arr = [5, 5, 5];
+"use strict";
 
-console.log(arr);
+let number = 5;
+const leftBorderWidth = 1;
+
+number = 10;
+
+console.log(number);
+
+const obj = {
+  a: 50,
+  b: 30,
+}
+
+obj.a = 90;
+
+console.log(obj);
