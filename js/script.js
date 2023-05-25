@@ -34,3 +34,20 @@ console.log("Ширина кузова автомобиля: " + vechicleBodyWid
 let COLOR_RED = '#F00';
 
 // _spiKey
+
+let number = 14;
+
+const persone = "Dima";
+
+const obj = {
+  name: 'Dima',
+  age: 25,
+  isMarried: true,
+}
+
+// console.log(obj.name);
+console.log(obj["name"]);
+
+let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {}, []];
+
+console.log(arr[1]);
