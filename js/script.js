@@ -1,53 +1,10 @@
-// "use strict";
+"use strict";
 
-// let number = 5;
-// const leftBorderWidth = 1;
 
-// number = 10;
+const answers = [];
+answers[0] = prompt('What is your first name?', '');
+answers[1] = prompt('What is your last name?', '');
+answers[2] = prompt('How old are you?', '');
 
-// console.log(number);
 
-// const obj = {
-//   a: 50,
-//   b: 30,
-// }
-
-// obj.a = 90;
-
-// console.log(obj);
-
-const vechicleBodyWidth = 5000;
-const vechicleBodyLength = 4000;
-console.log("Ширина кузова автомобиля: " + vechicleBodyWidth + ", длина: " + vechicleBodyLength);
-
-// ['retert', 'aawefawef', 'awrawer'].map(a => )
-
-// Request
-// data
-// response
-
-// snake_case
-// UPPER_SNAKE_CASE
-// Kebab-case
-// PascalCase 
-
-let COLOR_RED = '#F00';
-
-// _spiKey
-
-let number = 14;
-
-const persone = "Dima";
-
-const obj = {
-  name: 'Dima',
-  age: 25,
-  isMarried: true,
-}
-
-// console.log(obj.name);
-console.log(obj["name"]);
-
-let arr = ['plum.png', 'orange.jpg', 6, 'apple.bmp', {}, []];
-
-console.log(arr[1]);
+console.log(`My name is ${answers[0]} last name is ${answers[1]} and I'm ${answers[2]} years old`);
