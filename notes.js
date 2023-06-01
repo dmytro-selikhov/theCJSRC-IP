@@ -15,3 +15,4 @@
 // lesson 14. Интерполяция (ES6)
 // lesson 15. Операторы в JS
 // lesson 16. Учимся работать с системой контроля версий Git и с сервисом GitHub
+// lesson 17. Как работать с GitHub с разных компьютеров, gitignore и Git Kraken
