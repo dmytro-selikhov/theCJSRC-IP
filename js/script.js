@@ -62,22 +62,22 @@
 //Switch
 
 
-const num = 50;
+// const num = 50;
 
-switch(num){
-  case 49:
-    console.log('That is false');
-    break;
-  case 100:
-    console.log('That is not true');
-    break;
-  case 50:
-    console.log('That is true');
-    break;
-  default:
-    console.log('Not now');
-    break;
-}
+// switch(num){
+//   case 49:
+//     console.log('That is false');
+//     break;
+//   case 100:
+//     console.log('That is not true');
+//     break;
+//   case 50:
+//     console.log('That is true');
+//     break;
+//   default:
+//     console.log('Not now');
+//     break;
+// }
 
 
 // console.log(NaN || 2 || undefined); // 2
@@ -118,6 +118,70 @@ switch(num){
 // if (hamburger && cola || fries === 3 && nuggets){
 //   console.log('Done 3');
 // }
+
+
+
+
+
+
+// Логические операторы
+
+// const hamburger = 5;
+// const fries = null;
+
+// if (hamburger && fries) {
+//   console.log('I dont want eat');
+// } 
+
+
+
+// Всегда false - это 0, '', null, undefind, NaN
+// Операто && возвращает первое ложное значение,
+// на котором он остановился. А если все аргументы
+// правдивые, то он вернет последний на 
+// котором он сработал
+
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+// console.log(hamburger === 3 && cola && fries );
+
+// console.log(1 && 0); // 0
+// console.log(1 && 5); // 5
+// console.log(null && 5); // null
+// console.log(0 && 'dejbjkbF'); // 0
+
+// if (hamburger === 3 && cola === 1 && fries ) {
+//   console.log('All Done');
+// } else{
+//   console.log('We go to another place');
+// }
+
+
+// Оператор || возвращает первое правдивое значение,
+// на котором он остановился. А если все аргументы
+// ложные, то он вернет последнее ложное значение
+
+const hamburger = 3;
+const fries = 3;
+const cola = 0;
+const nuggets = 2;
+
+if (hamburger === 3 && cola === 2 || fries === 3 && nuggets ) {
+  console.log('Fine');
+} else{
+  console.log('We go to another place');
+}
+
+console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets );
+let johnReport, alexReport, samReport, mariaRepot = 'done';
+
+console.log(johnReport || alexReport || samReport || mariaRepot); 
+
+
+
+
+
 
 
 
