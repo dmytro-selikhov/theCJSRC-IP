@@ -18,5 +18,8 @@
   "homepage": "https://github.com/dmytro-selikhov/theCJSRC-IP#readme",
   "devDependencies": {
     "eslint": "^8.41.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
   }
 }
