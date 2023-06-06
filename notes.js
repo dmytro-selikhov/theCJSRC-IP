@@ -22,3 +22,4 @@
 // lesson 21. (д) Логические операторы
 // lesson 22. Циклы
 // lesson Linux today
+// lesson Linux today
