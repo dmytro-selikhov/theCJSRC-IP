@@ -16,7 +16,7 @@
     - 'Один из последних просмотренных фильмов?'
     - 'На сколько оцените его?'
 Ответы стоит поместить в отдельные переменные
-Записать ответы в объект movies в формате: 
+Записать ответы в объект movies в формате:
     movies: {
         'logan': '8.1'
     }
@@ -131,14 +131,14 @@
 
 // if (hamburger && fries) {
 //   console.log('I dont want eat');
-// } 
+// }
 
 
 
 // Всегда false - это 0, '', null, undefind, NaN
 // Операто && возвращает первое ложное значение,
 // на котором он остановился. А если все аргументы
-// правдивые, то он вернет последний на 
+// правдивые, то он вернет последний на
 // котором он сработал
 
 // const hamburger = 3;
@@ -162,27 +162,45 @@
 // на котором он остановился. А если все аргументы
 // ложные, то он вернет последнее ложное значение
 
-const hamburger = 3;
-const fries = 3;
-const cola = 0;
-const nuggets = 2;
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
 
-if (hamburger === 3 && cola === 2 || fries === 3 && nuggets ) {
-  console.log('Fine');
-} else{
-  console.log('We go to another place');
+// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets ) {
+//   console.log('Fine');
+// } else{
+//   console.log('We go to another place');
+// }
+
+// console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets );
+// let johnReport, alexReport, samReport, mariaRepot = 'done';
+
+// console.log(johnReport || alexReport || samReport || mariaRepot);
+
+//lesson 22. Циклы
+let num = 50;
+
+// while (num <= 55) {
+//   console.log(num);
+//   num++;
+// }
+
+// do {
+//   console.log(num);
+//   num++;
+// }
+// while (num <= 55);
+
+for (let i = 1; i < 10; i++) {
+  if (i === 6) {
+    // break;
+    continue;
+  }
+
+  console.log(i);
+
 }
-
-console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets );
-let johnReport, alexReport, samReport, mariaRepot = 'done';
-
-console.log(johnReport || alexReport || samReport || mariaRepot); 
-
-
-
-
-
-
 
 
 

@@ -21,5 +21,4 @@
 // lesson 20. Условия
 // lesson 21. (д) Логические операторы
 // lesson 22. Циклы
-// lesson Linux today
-// lesson Linux today
+// lesson 23. (д) Цикл в цикле и метки
