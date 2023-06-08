@@ -179,7 +179,7 @@
 // console.log(johnReport || alexReport || samReport || mariaRepot);
 
 //lesson 22. Циклы
-let num = 50;
+// let num = 50;
 
 // while (num <= 55) {
 //   console.log(num);
@@ -192,15 +192,84 @@ let num = 50;
 // }
 // while (num <= 55);
 
-for (let i = 1; i < 10; i++) {
-  if (i === 6) {
-    // break;
-    continue;
+// for (let i = 1; i < 10; i++) {
+//   if (i === 6) {
+//     // break;
+//     continue;
+//   }
+
+//   console.log(i);
+
+// }
+
+
+//////////////////////////////////////
+// Цикл в цикле.
+// for (let i = 0; i < 3; i++){
+//   console.log(i);
+//   for (let j = 0; j < 3; j++){
+//     console.log(j);
+//   }
+// }
+
+
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+
+let result = '';
+const lenght = 7;
+
+for (let i = 1; i < lenght; i++) {
+  for(let j = 0; j < i; j++){
+    result += '*';
   }
 
-  console.log(i);
-
+  result += '\n';
 }
+
+console.log(result);
+
+
+//////////////////////////////////////
+// Цикл в цикле. Метки
+first: for (let i = 0; i < 3; i++){
+  console.log(`First level(continue): ${i}`);
+  for (let j = 0; j < 3; j++){
+    console.log(`Second level(continue): ${j}`);
+       for (let k = 0; k < 7; k++){
+        if (k === 5) continue first;
+        console.log(`Third level(continue): ${k}`);
+      }
+  }
+}
+
+
+first: for (let i = 0; i < 3; i++){
+  console.log(`First level(break): ${i}`);
+  for (let j = 0; j < 3; j++){
+    console.log(`Second level(break): ${j}`);
+       for (let k = 0; k < 7; k++){
+        if (k === 5) break first;
+        console.log(`Third level(break): ${k}`);
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
