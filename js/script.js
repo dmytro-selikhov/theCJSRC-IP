@@ -263,77 +263,126 @@
 //////////////////////////////////////
 // Практические задачи
 
+// Coding Exercise 3: Задания на использование циклов и условий
+// // Место для первой задачи
+// function firstTask() {
+//     // Пишем решение вот тут
+//     for(let i = 5; i <= 10; i++){
+//       console.log(i);
+//     }
+    
+// }
+
+// // Место для второй задачи
+// function secondTask() {
+//     // Пишем решение вот тут
+//     for(let i = 20; i>=10; i--){
+//       if(i === 13) break;
+//       console.log(i);
+//     }
+// }
+
+// // Место для третьей задачи
+// function thirdTask() {
+//     // Пишем решение вот тут
+//     for(let i = 2; i <= 10; i++){
+//       if(i%2 === 0){
+//         console.log(i);
+//       }
+//     }
+    
+// }
+
+// // Место для четвертой задачи
+
+// // Цикл, который нужно переписать:
+
+// // for (let i = 2; i <= 16; i++) {
+// //     if (i % 2 === 0) {
+// //         continue;
+// //     } else {
+// //         console.log(i);
+// //     }
+// // }
+
+
+// function fourthTask() {
+//     // Пишем решение вот тут
+//   let i = 2;
+//     while (i <= 16) {
+//        if (i % 2 === 0) {
+//         i++;
+//         continue;
+//         } else {
+//             console.log(i);
+//         }
+//       i++;
+//     }   
+// }
+
+// // Место для пятой задачи
+
+// function fifthTask() {
+//     const arrayOfNumbers = [];
+
+//     // Пишем решение вот тут
+//     for (let i = 5; i < 11; i++ ){
+//       arrayOfNumbers.push(i);
+//     }
+//     // Не трогаем
+//     return arrayOfNumbers;
+// }
+// fifthTask()
+
+////////////////////////////////////////////////
+// Coding Exercise 4: (*) Продвинутые задания на использование циклов и условий
 // Место для первой задачи
 function firstTask() {
-    // Пишем решение вот тут
-    for(let i = 5; i <= 10; i++){
-      console.log(i);
-    }
-    
-}
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const arr = [3, 5, 8, 16, 20, 23, 50];
+    const result = [];
 
+
+    // Пишем решение вот тут
+     for (let i = 0; i <arr.length; i++ ){
+      result.push(arr[i]);
+    }
+
+    // Не трогаем
+    return result;
+}
 // Место для второй задачи
 function secondTask() {
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+
     // Пишем решение вот тут
-    for(let i = 20; i>=10; i--){
-      if(i === 13) break;
-      console.log(i);
+    for (let i = 0; i < data.length; i++){
+      if(typeof(data[i]) === 'number'){
+        data[i] = data[i] * 2;
+      }
+      if (typeof(data[i]) === 'string'){
+        data[i] = data[i] + ' - done';
+      }
     }
+    // Не трогаем
+    return data;
 }
 
 // Место для третьей задачи
 function thirdTask() {
+    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+    const data = [5, 10, 'Shopping', 20, 'Homework'];
+    const result = [];
+
     // Пишем решение вот тут
-    for(let i = 2; i <= 10; i++){
-      if(i%2 === 0){
-        console.log(i);
-      }
+    for (let i = data.length -1; i >= 0; i--){
+      result.push(data[i]);
     }
-    
-}
 
-// Место для четвертой задачи
-
-// Цикл, который нужно переписать:
-
-// for (let i = 2; i <= 16; i++) {
-//     if (i % 2 === 0) {
-//         continue;
-//     } else {
-//         console.log(i);
-//     }
-// }
-
-
-function fourthTask() {
-    // Пишем решение вот тут
-  let i = 2;
-    while (i <= 16) {
-       if (i % 2 === 0) {
-        i++;
-        continue;
-        } else {
-            console.log(i);
-        }
-      i++;
-    }   
-}
-
-// Место для пятой задачи
-
-function fifthTask() {
-    const arrayOfNumbers = [];
-
-    // Пишем решение вот тут
-    for (let i = 5; i < 11; i++ ){
-      arrayOfNumbers.push(i);
-    }
     // Не трогаем
-    return arrayOfNumbers;
+    return result;
 }
-fifthTask()
-
-
 
 
 
