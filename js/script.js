@@ -212,7 +212,8 @@
 //   }
 // }
 
-
+/////////////////////////////////////
+// Рисуем звездочки
 // *
 // **
 // ***
@@ -220,47 +221,117 @@
 // *****
 // ******
 
-let result = '';
-const lenght = 7;
+// let result = '';
+// const lenght = 7;
 
-for (let i = 1; i < lenght; i++) {
-  for(let j = 0; j < i; j++){
-    result += '*';
-  }
+// for (let i = 1; i < lenght; i++) {
+//   for(let j = 0; j < i; j++){
+//     result += '*';
+//   }
 
-  result += '\n';
-}
+//   result += '\n';
+// }
 
-console.log(result);
+// console.log(result);
 
 
 //////////////////////////////////////
 // Цикл в цикле. Метки
-first: for (let i = 0; i < 3; i++){
-  console.log(`First level(continue): ${i}`);
-  for (let j = 0; j < 3; j++){
-    console.log(`Second level(continue): ${j}`);
-       for (let k = 0; k < 7; k++){
-        if (k === 5) continue first;
-        console.log(`Third level(continue): ${k}`);
-      }
-  }
+// first: for (let i = 0; i < 3; i++){
+//   console.log(`First level(continue): ${i}`);
+//   for (let j = 0; j < 3; j++){
+//     console.log(`Second level(continue): ${j}`);
+//        for (let k = 0; k < 7; k++){
+//         if (k === 5) continue first;
+//         console.log(`Third level(continue): ${k}`);
+//       }
+//   }
+// }
+
+
+// first: for (let i = 0; i < 3; i++){
+//   console.log(`First level(break): ${i}`);
+//   for (let j = 0; j < 3; j++){
+//     console.log(`Second level(break): ${j}`);
+//        for (let k = 0; k < 7; k++){
+//         if (k === 5) break first;
+//         console.log(`Third level(break): ${k}`);
+//       }
+//   }
+// }
+
+//////////////////////////////////////
+// Практические задачи
+
+// Место для первой задачи
+function firstTask() {
+    // Пишем решение вот тут
+    for(let i = 5; i <= 10; i++){
+      console.log(i);
+    }
+    
 }
 
-
-first: for (let i = 0; i < 3; i++){
-  console.log(`First level(break): ${i}`);
-  for (let j = 0; j < 3; j++){
-    console.log(`Second level(break): ${j}`);
-       for (let k = 0; k < 7; k++){
-        if (k === 5) break first;
-        console.log(`Third level(break): ${k}`);
-      }
-  }
+// Место для второй задачи
+function secondTask() {
+    // Пишем решение вот тут
+    for(let i = 20; i>=10; i--){
+      if(i === 13) break;
+      console.log(i);
+    }
 }
 
+// Место для третьей задачи
+function thirdTask() {
+    // Пишем решение вот тут
+    for(let i = 2; i <= 10; i++){
+      if(i%2 === 0){
+        console.log(i);
+      }
+    }
+    
+}
+
+// Место для четвертой задачи
+
+// Цикл, который нужно переписать:
+
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
 
 
+function fourthTask() {
+    // Пишем решение вот тут
+  let i = 2;
+    while (i <= 16) {
+       if (i % 2 === 0) {
+        i++;
+        continue;
+        } else {
+            console.log(i);
+        }
+      i++;
+    }   
+}
+
+// Место для пятой задачи
+
+function fifthTask() {
+    const arrayOfNumbers = [];
+
+    // Пишем решение вот тут
+    for (let i = 5; i < 11; i++ ){
+      arrayOfNumbers.push(i);
+    }
+    // Не трогаем
+    return arrayOfNumbers;
+}
+fifthTask()
 
 
 
