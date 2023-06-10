@@ -337,52 +337,117 @@
 ////////////////////////////////////////////////
 // Coding Exercise 4: (*) Продвинутые задания на использование циклов и условий
 // Место для первой задачи
-function firstTask() {
-    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
-    const arr = [3, 5, 8, 16, 20, 23, 50];
-    const result = [];
+// function firstTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const arr = [3, 5, 8, 16, 20, 23, 50];
+//     const result = [];
 
 
-    // Пишем решение вот тут
-     for (let i = 0; i <arr.length; i++ ){
-      result.push(arr[i]);
-    }
+//     // Пишем решение вот тут
+//      for (let i = 0; i <arr.length; i++ ){
+//       result.push(arr[i]);
+//     }
 
-    // Не трогаем
-    return result;
-}
-// Место для второй задачи
-function secondTask() {
-    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
-    const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     // Не трогаем
+//     return result;
+// }
+// // Место для второй задачи
+// function secondTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
 
-    // Пишем решение вот тут
-    for (let i = 0; i < data.length; i++){
-      if(typeof(data[i]) === 'number'){
-        data[i] = data[i] * 2;
-      }
-      if (typeof(data[i]) === 'string'){
-        data[i] = data[i] + ' - done';
-      }
-    }
-    // Не трогаем
-    return data;
-}
+//     // Пишем решение вот тут
+//     for (let i = 0; i < data.length; i++){
+//       if(typeof(data[i]) === 'number'){
+//         data[i] = data[i] * 2;
+//       }
+//       if (typeof(data[i]) === 'string'){
+//         data[i] = data[i] + ' - done';
+//       }
+//     }
+//     // Не трогаем
+//     return data;
+// }
 
-// Место для третьей задачи
-function thirdTask() {
-    // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
-    const data = [5, 10, 'Shopping', 20, 'Homework'];
-    const result = [];
+// // Место для третьей задачи
+// function thirdTask() {
+//     // Значения массива менять нельзя, тут он проверяется автоматически именно на эти значения
+//     const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     const result = [];
 
-    // Пишем решение вот тут
-    for (let i = data.length -1; i >= 0; i--){
-      result.push(data[i]);
-    }
+//     // Пишем решение вот тут
+//     for (let i = data.length -1; i >= 0; i--){
+//       result.push(data[i]);
+//     }
 
-    // Не трогаем
-    return result;
-}
+//     // Не трогаем
+//     return result;
+// }
+
+/////////////////////////////////////////
+// Coding Exercise 5: (**) Задача на формирование фигуры
+
+// const lines = 5;
+// let result = '';
+// Проверяется именно переменная result, формируйте строку в ней
+
+// Рисуем звездочки
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+
+// let result = '';
+// const lenght = 7;
+
+// for (let i = 1; i < lenght; i++) {
+//   for(let j = 0; j < i; j++){
+//     result += '*';
+//   }
+
+//   result += '\n';
+// }
+
+// console.log(result);
+
+
+//      *
+//     ***
+//    *****
+//   *******
+//  *********
+// ***********
+//Solution
+
+// const lines = 5;
+// let result = '';
+
+// for (let i = 0; i <= lines; i++) {
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
+// }
+
+// console.log(result)
+
+///////////////////////////////////////////////////
+// 24. Практика, ч2. Применяем условия и циклы
+
+
+
+
+
+
+
+
+
+
 
 
 
