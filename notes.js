@@ -26,3 +26,4 @@
 // Coding Exercise 4: (*) Продвинутые задания на использование циклов и условий
 // Coding Exercise 5: (**) Задача на формирование фигуры
 // CCNA today
+// Linux today
