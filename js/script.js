@@ -524,19 +524,76 @@
 //     (a != null && b != null && a != '' && b != '' && a.length < 50) ? personalMovieDB.movies[a] = b : x--, console.log("Error");
 //     x++;
 // }
+/////////////////////////////////////////////////////////
+// lesson 25. Функции, стрелочные ф-ции (ES6)
+//
+// let num = 20;
+
+// function showFirstMessage(text){
+//   console.log(text);
+//   num = 10;
+// };
+
+// showFirstMessage('Hello, World!');
+// console.log(num);
 
 
+// function calc(a, b) {
+//   return (a + b);
+// }
+
+// console.log(calc(3, 4));
+// console.log(calc(5, 7));
+// console.log(calc(9, 11));
+
+// function ret(){
+//   let num = 50;
+
+//   // 
+
+//   return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
 
 
+// ///////////////////////
+// // FUNCTION DECLARATION
+// // Создается до начала выполнения скрипта,
+// // можно вызвать перед объявлением
+
+// function fooDec(text){
+//   console.log(text);
+// };
+
+// fooDec('Function Declaration');
 
 
+// ///////////////////////
+// // FUNCTION EXPRESSION
+// // Создается только тогда, когда доходит
+// // поток кода, можно вызвать только после объявления.
+
+// let fooExp = function (text){
+//   console.log(text);
+// };
+
+// fooExp('Function Expression');
+
+// ///////////////////////
+// // ARROW FUNCTION
+// // Не имеет своего контекста (this)
+
+// let arrowFoo = (text) =>  console.log(text);
+
+// arrowFoo('Arrow Function');
 
 
+// //////////////////////
+// const calc = (a, b) => a + b;
+// calc(4, 5);
 
 
-
-
-
-
-
-
+///////////////////////////////////////
+// 26. (д) Еще раз про аргументы функций
