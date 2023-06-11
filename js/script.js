@@ -794,6 +794,106 @@ P.S. Функции вызывать не обязательно*/
 // Код возьмите из предыдущего домашнего задания
 
 
+//////////////////////////////////////////////////
+// Coding Exercise 7: (*) Продвинутые задания на использование функций
+
+// // Место для первой задачи
+// function calculateVolumeAndArea(side) {
+//   if( typeof(side) != 'number' || side < 0 || !Number.isInteger(side)  ) {
+//     return `При вычислении произошла ошибка`;
+//   } else {
+//        const cubeArea = 6 * (side * side);
+//        const cubeVolume = side * side * side;
+//        return `Объем куба: ${cubeVolume}, площадь всей поверхности: ${cubeArea}`;
+//     }   
+// }
+// calculateVolumeAndArea(15); 
+
+// // Место для второй задачи
+// function getCoupeNumber(seat) {
+
+//   if( typeof(seat) != 'number' || seat < 0 || !Number.isInteger(seat)  ) {
+//       return `Ошибка. Проверьте правильность введенного номера места`;
+//     } else if (seat === 0 || seat > 36) {
+//        return `Таких мест в вагоне не существует`;
+//     } else if (seat >= 1 && seat <= 4){
+//       return 1;
+//     } else if (seat >= 5 && seat <= 8){
+//       return 2;
+//     } else if (seat >= 9 && seat <= 12){
+//       return 3;
+//     } else if (seat >= 13 && seat <= 16){
+//       return 4;
+//     } else if (seat >= 17 && seat <= 20){
+//       return 5;
+//     } else if (seat >= 21 && seat <= 24){
+//       return 6;
+//     } else if (seat >= 25 && seat <= 28){
+//       return 7;
+//     } else if (seat >= 29 && seat <= 32){
+//       return 8;
+//     } else if (seat >= 33 && seat <= 36){
+//       return 9;
+//     }
+// }
+
+// console.log(getCoupeNumber());
+
+//Mentors Solution
+// function calculateVolumeAndArea(length) {
+//     if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(length)) {
+//         return "При вычислении произошла ошибка";
+//     }
+
+//     let volume = 0,
+//         area = 0;
+
+//     volume = length * length * length;
+//     // length ** 3 - это тоже самое, что и выше или варианты через цикл.
+//     // ** - это оператор степени, напоминаю. Но онлайн редактор его не принимает =/
+//     area = 6 * (length * length);
+
+//     return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+// }
+
+// calculateVolumeAndArea(5);
+
+// function getCoupeNumber(seatNumber) {
+//     if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+//         return "Ошибка. Проверьте правильность введенного номера места";
+//     }
+
+//     if (seatNumber === 0 || seatNumber > 36) {
+//         return "Таких мест в вагоне не существует";
+//     }
+
+//     return Math.ceil(seatNumber / 4);
+//     // тут очень много вариантов решения, но выбрал один из элегантных :)
+// }
+
+// getCoupeNumber(33);
+
+////////////////////////////////////////////////////////////
+// Coding Exercise 8: (*) Продвинутые задания на использование функций
+
+
+// Место для первой задачи
+function getTimeFromMinutes() {
+
+}
+
+// Место для второй задачи
+function findMaxNumber() {
+
+}
+
+
+
+
+
+
+
+
 
 
 
