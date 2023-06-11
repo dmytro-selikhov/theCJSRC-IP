@@ -645,20 +645,20 @@
 // Coding Exercise 6: Задание на работу с функциями
 
 // Место для первой задачи
-function sayHello(name) {
-  return `Привет, ${name}!`
-}
+// function sayHello(name) {
+//   return `Привет, ${name}!`
+// }
 
 
-// Место для второй задачи
-function returnNeighboringNumbers(num) {
-  let arr = [];
-  arr.push(num -1);
-  arr.push(num);
-  arr.push(num + 1);
-  return arr;
+// // Место для второй задачи
+// function returnNeighboringNumbers(num) {
+//   let arr = [];
+//   arr.push(num -1);
+//   arr.push(num);
+//   arr.push(num + 1);
+//   return arr;
 
-}
+// }
 
 // Место для третьей задачи
 // function getMathResult(baseNum, repeatTimes) {
@@ -742,6 +742,69 @@ function returnNeighboringNumbers(num) {
 
 ////////////////////////////////////////
 // 28. Методы и свойства строк и чисел
+// Строки
+
+// const str = 'test';
+
+// console.log(str.length);
+// // console.log(str.toUpperCase());
+// // console.log(str.toLowerCase());
+// const fruit = 'Some fruit';
+// console.log(fruit.indexOf('fruit'));
+
+// const logg = 'Hello world!';
+// console.log(logg.slice(6, 11));
+
+// // const bigString = 'Большая строка для тестирования!';
+// // console.log(bigString.slice(8));
+// // console.log(bigString.slice(-13, -1));
+
+// console.log(logg.substring(6, 11));
+
+// // Вырезает определенное количество символов с определенного
+// console.log(logg.substr(6, 5));
+
+/////////////////////////////////////
+// Числа
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = '12.2px';
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
+
+
+/////////////////////////////////////////
+// 29. Практика , ч3. Используем функции
+/* Задание на урок:
+
+1) Первую часть задания повторить по уроку
+
+2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
+false - выводит в консоль главный объект программы
+
+3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
+"Ваш любимый жанр под номером ${номер по порядку}". Каждый ответ записывается в массив данных
+genres
+
+P.S. Функции вызывать не обязательно*/
+
+// 'use strict';
+
+// Код возьмите из предыдущего домашнего задания
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
