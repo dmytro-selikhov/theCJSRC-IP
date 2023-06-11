@@ -645,23 +645,103 @@
 // Coding Exercise 6: Задание на работу с функциями
 
 // Место для первой задачи
-function sayHello() {
-
+function sayHello(name) {
+  return `Привет, ${name}!`
 }
 
+
 // Место для второй задачи
-function returnNeighboringNumbers() {
+function returnNeighboringNumbers(num) {
+  let arr = [];
+  arr.push(num -1);
+  arr.push(num);
+  arr.push(num + 1);
+  return arr;
 
 }
 
 // Место для третьей задачи
-function getMathResult() {
+// function getMathResult(baseNum, repeatTimes) {
+//   let result = 1;
+//   let str = ''; 
 
-}
+//   if (typeof repeatTimes != 'number' || repeatTimes === 0 || repeatTimes < 0){
+//       console.log(baseNum);
+//     return baseNum;
+//   } else {
+//       for (let i = 0; i < repeatTimes; i++){
+//         // console.log(result, baseNum);
+//         result *= baseNum;
+
+//         str += `${result}---`
+//       }
+//     let fn = str.substring(0, str.length -3);
+//     console.log(fn);
+//     return fn;
+//   }
+// }
+
+// getMathResult(10, 5);
+
+// Second Solution
+// function getMathResult(baseNum, repeatTimes) {
+//   let result = baseNum; 
+
+//   if (typeof repeatTimes != 'number' || repeatTimes === 0 || repeatTimes < 0){
+//       console.log(baseNum);
+//     return baseNum;
+//   } else {
+//       for (let i = 2; i <= repeatTimes; i++){
+//         // console.log(result, baseNum);
+//         result += `---${baseNum * i}`;
+//       }
+//       console.log(result);
+//     return result;
+//   }
+// }
+
+// getMathResult(10, 5);
 
 
+////////////////////////////////
+// Mentor Solution
+// function sayHello(name) {
+//     return `Привет, ${name}!`;
+// }
 
+// sayHello('Alex');
 
+// function returnNeighboringNumbers(num) {
+//     return [num - 1, num, num + 1];
+// }
+
+// returnNeighboringNumbers(5);
+
+// function getMathResult(num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
+
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i === times) {
+//             str += `${num * i}`;
+//             // Тут без черточек в конце
+//         } else {
+//             str += `${num * i}---`;
+//             // Это тоже самое, что и
+//             // str = str + num * i + "---"
+//         }
+//     }
+
+//     return str;
+// }
+
+// getMathResult(10, 5);
+
+////////////////////////////////////////
+// 28. Методы и свойства строк и чисел
 
 
 
