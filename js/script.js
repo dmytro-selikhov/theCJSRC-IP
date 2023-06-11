@@ -597,3 +597,82 @@
 
 ///////////////////////////////////////
 // 26. (д) Еще раз про аргументы функций
+// DRY - Don't Repeat Yourself
+
+// const usdCurr = 28;
+// const eurCurr = 32;
+
+// function convert (amount, curr) {
+//   console.log(curr * amount);
+// };
+
+// convert(500, usdCurr);
+// convert(500, eurCurr);
+
+///////////////////////////////////////
+// 27. (д) Про важность return
+
+
+// const usdCurr = 28;
+// const discount = 0.9;
+
+// function convert (amount, curr) {
+//   return curr * amount;
+// };
+
+// function promotion(result){
+//   console.log(result * discount);
+// }
+// const res = convert(500, usdCurr);
+
+// promotion(res);
+
+
+// function test(){
+//   for (let i = 0; i < 5; i++){
+//     console.log(i);
+//     if(i === 3) return
+//   }
+//   console.log('Done');
+// }
+
+// test();
+
+// function doNothing(){}
+// console.log(doNothing() === undefined);
+
+////////////////////////////////////////
+// Coding Exercise 6: Задание на работу с функциями
+
+// Место для первой задачи
+function sayHello() {
+
+}
+
+// Место для второй задачи
+function returnNeighboringNumbers() {
+
+}
+
+// Место для третьей задачи
+function getMathResult() {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
