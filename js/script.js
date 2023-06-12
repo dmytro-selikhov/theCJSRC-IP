@@ -1018,11 +1018,38 @@ P.S. Функции вызывать не обязательно*/
 // lesson 30. (д) Метод trim()
 // lesson 31. Callback- функции
 
+// function first(){
+//   // Do something
+//   setTimeout(function(){
+//     console.log(1);
+//   }, 500);
+// }
+
+// function second(){
+//   console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback){
+//   console.log(`I study: ${lang}!`);
+//   callback();
+// }
+
+// function done() {
+//   console.log('I have done this lesson!');
+// }
 
 
+// learnJS('JavaScript', done);
 
+// learnJS('JavaScript', function(){
+//   console.log('I have done this lesson!')
+// });
 
-
+////////////////////////////////////
+// lesson 32. Объекты, деструктуризация объектов (ES6)
 
 
 
