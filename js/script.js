@@ -878,21 +878,144 @@ P.S. Функции вызывать не обязательно*/
 
 
 // Место для первой задачи
-function getTimeFromMinutes() {
+// function getTimeFromMinutes(minutesIncome) {
+//   if(typeof minutesIncome !== 'number' || minutesIncome < 0 || !Number.isInteger(minutesIncome)){
+//     return 'Ошибка, проверьте данные';
+//   } 
+//    const hours =  Math.floor(minutesIncome / 60);
+//    const minutes = minutesIncome % 60;
 
-}
+//    let hoursStr = '';
 
-// Место для второй задачи
-function findMaxNumber() {
+//    switch(hours){
+//       case 0:
+//             hoursStr = 'часов';
+//             break;
+//       case 1:
+//             hoursStr = 'час';
+//             break;
+//       case 2:
+//       case 3:
+//       case 4:
+//             hoursStr = 'часа';
+//             break;
+//       default:
+//             hoursStr = 'часов';
+//    }
 
-}
+//    return `Это ${hours} ${hoursStr} и ${minutes} минут`
+
+// }
+
+// console.log(getTimeFromMinutes(450));;
+
+// // Место для второй задачи
+// function findMaxNumber(num1, num2, num3, num4) {
+//   if (typeof num1 !== 'number' || typeof num2 !== 'number' || typeof num3 !== 'number' || typeof num4 !== 'number'){
+//     return 0;
+//   }
+//   if(num1 === null || num2 === null || num3 === null || num4 === null){
+//     return 0;
+//   }
+//   let bigNum = 0;
+//   const arr = [num1, num2, num3, num4];
+
+//   for( let i = 0; i < arr.length; i++){
+//     if (bigNum < arr[i]){
+//       bigNum = arr[i];
+//     } else {
+//       bigNum = bigNum;
+//     }
+//   }
+//   return bigNum;
+// }
+
+// console.log(findMaxNumber(36, 5, 10, 18));
 
 
 
+/////////////////////////////////////////
+// Mentors Solution
+
+// function getTimeFromMinutes(minutesTotal) {
+//     if (typeof(minutesTotal) !== 'number' || minutesTotal < 0 || !Number.isInteger(minutesTotal)) {
+//         return "Ошибка, проверьте данные";
+//     }
+
+//     const hours = Math.floor(minutesTotal / 60);
+//     const minutes = minutesTotal % 60;
+
+//     let hoursStr = '';
+
+//     switch (hours) {
+//         case 0: 
+//             hoursStr = 'часов';
+//             break;
+//         case 1:
+//             hoursStr = 'час';
+//             break;
+//         case 2:
+//         case 3:
+//         case 4:
+//             hoursStr = 'часа';
+//             break;
+//         default:
+//             hoursStr = 'часов';
+//     }
+
+//     return `Это ${hours} ${hoursStr} и ${minutes} минут`;
+// }
+
+// getTimeFromMinutes(180)
+
+// function findMaxNumber(a, b ,c, d) {
+//     // Самое простое - это использовать Math.max :)
+//     // А оптимизировать такую проверку мы научимся совсем скоро
+//     if (typeof(a) !== 'number' ||
+//         typeof(b) !== 'number' ||
+//         typeof(c) !== 'number' ||
+//         typeof(d) !== 'number') {
+//         return 0;
+//     } else {
+//         return Math.max(a, b ,c, d);
+//     }
+// }
+
+// findMaxNumber(1, 5, 6.6, 10.5);
+// findMaxNumber(1, 5, '6', '10');
 
 
+///////////////////////////////////
+// Coding Exercise 9: (**) Задача с собеседований на числа Фибоначчи
+// function fib(num) {
+//     if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+//         return "";
+//     }
 
+//     let result = '';
+//     let first = 0;
+//     let second = 1;
 
+//     for (let i = 0; i < num; i++) {
+//         if (i + 1 === num) {
+//             result += `${first}`;
+//             // Без пробела в конце
+//         } else {
+//             result += `${first} `;
+//         }
+
+//         let third = first + second;
+//         first = second;
+//         second = third;
+//     }
+
+//     return result;
+// }
+
+// console.log(fib('7'));
+
+////////////////////////////////////////
+// lesson 30. (д) Метод trim()
 
 
 
