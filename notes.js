@@ -39,6 +39,7 @@
 // lesson 31. Callback- функции
 // lesson 32. Объекты, деструктуризация объектов (ES6)
 // Linux today and CCNA
+// Linux today and CCNA
 
 
 
