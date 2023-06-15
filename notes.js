@@ -38,10 +38,7 @@
 // lesson 30. (д) Метод trim()
 // lesson 31. Callback- функции
 // lesson 32. Объекты, деструктуризация объектов (ES6)
-// Linux today and CCNA
-// Linux today and CCNA
-// Linux today and CCNA
-
+// lesson 33. Массивы и псевдомассивы
 
 
 
