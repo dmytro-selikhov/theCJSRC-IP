@@ -40,7 +40,7 @@
 // lesson 32. Объекты, деструктуризация объектов (ES6)
 // lesson 33. Массивы и псевдомассивы
 // Video production today
-
+// Linux today
 
 
 
