@@ -41,7 +41,7 @@
 // lesson 33. Массивы и псевдомассивы
 // Video production today
 // Linux today
-
+// Linux today
 
 
 
