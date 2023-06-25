@@ -270,7 +270,7 @@
 //     for(let i = 5; i <= 10; i++){
 //       console.log(i);
 //     }
-    
+
 // }
 
 // // Место для второй задачи
@@ -290,7 +290,7 @@
 //         console.log(i);
 //       }
 //     }
-    
+
 // }
 
 // // Место для четвертой задачи
@@ -1081,7 +1081,7 @@ P.S. Функции вызывать не обязательно*/
 //   } else {
 //     console.log(`Свойство ${key} имеет значение ${options[key]} `);  
 //   }
-  
+
 // }
 
 // Mentors Solution
@@ -1114,9 +1114,42 @@ P.S. Функции вызывать не обязательно*/
 
 //////////////////////////////////////////////
 // 33. Массивы и псевдомассивы
+const arr = [2, 13, 26, 8, 10];
+arr.sort(compareNum);
+console.log(arr);
+
+// Отсортирует числа правильно
+function compareNum(a, b) {
+  return a - b;
+}
+// arr[99] = 0;
+// console.log(arr.length);
+// console.log(arr);
+
+arr.forEach(function (item, i, arr) {
+  console.log(`${i}: ${item} inside array ${arr}`);
+});
+
+// // arr.pop();
+// arr.push(10);
+
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
 
 
+// В цикле FOR OF можно использовать BREAKE и CONTINUE
+// for (let value of arr) {
+//   console.log(value);
+// }
 
+
+// const str = prompt('', '');
+// const products = str.split(', ');
+// products.sort();
+// console.log(products.join('; '));
 
 
 

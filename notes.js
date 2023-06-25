@@ -39,11 +39,7 @@
 // lesson 31. Callback- функции
 // lesson 32. Объекты, деструктуризация объектов (ES6)
 // lesson 33. Массивы и псевдомассивы
-// UI/UX today
-// UI/UX today
-// UI/UX today
-// UI/UX today
-// UI/UX today
+// lesson 35. Передача по ссылке или по значению, Spread оператор (ES6-ES9)
 
 
 
