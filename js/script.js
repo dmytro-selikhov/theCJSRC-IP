@@ -317,7 +317,7 @@
 //             console.log(i);
 //         }
 //       i++;
-//     }   
+//     }
 // }
 
 // // Место для пятой задачи
@@ -444,11 +444,11 @@
 1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
 
 2) Сделать так, чтобы пользователь не мог оставить ответ в виде пустой строки,
-отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит - 
+отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит -
 возвращаем пользователя к вопросам опять
 
 3) При помощи условий проверить  personalMovieDB.count, и если он меньше 10 - вывести сообщение
-"Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если больше - 
+"Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если больше -
 "Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
 
 4) Потренироваться и переписать цикл еще двумя способами*/
@@ -472,12 +472,12 @@
 //         b = prompt('На сколько оцените его?', '');
 
 //   if (a != null && b != null && a != '' && b != '' && a.length < 50 ){
-//     personalMovieDB.movies[a] = b; 
+//     personalMovieDB.movies[a] = b;
 //     console.log('done');
 //   } else {
 //     console.log('error');
 //     // При не соответсвии по одному из условий мы:
-//     // производим уменьшение количества 
+//     // производим уменьшение количества
 //     // итераций на 1 и возвращаем цикл на шаг назад
 //     i--;
 //   }
@@ -501,7 +501,7 @@
 ////////////////////////////////
 // Два дополнительных варианта цикла
 
-// First 
+// First
 // let x = 0;
 // while (x < 1){
 //     const   a = prompt('Последний фильм?', ''),
@@ -549,7 +549,7 @@
 // function ret(){
 //   let num = 50;
 
-//   // 
+//   //
 
 //   return num;
 // }
@@ -663,7 +663,7 @@
 // Место для третьей задачи
 // function getMathResult(baseNum, repeatTimes) {
 //   let result = 1;
-//   let str = ''; 
+//   let str = '';
 
 //   if (typeof repeatTimes != 'number' || repeatTimes === 0 || repeatTimes < 0){
 //       console.log(baseNum);
@@ -685,7 +685,7 @@
 
 // Second Solution
 // function getMathResult(baseNum, repeatTimes) {
-//   let result = baseNum; 
+//   let result = baseNum;
 
 //   if (typeof repeatTimes != 'number' || repeatTimes === 0 || repeatTimes < 0){
 //       console.log(baseNum);
@@ -783,7 +783,7 @@
 2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
 false - выводит в консоль главный объект программы
 
-3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
+3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос
 "Ваш любимый жанр под номером ${номер по порядку}". Каждый ответ записывается в массив данных
 genres
 
@@ -805,9 +805,9 @@ P.S. Функции вызывать не обязательно*/
 //        const cubeArea = 6 * (side * side);
 //        const cubeVolume = side * side * side;
 //        return `Объем куба: ${cubeVolume}, площадь всей поверхности: ${cubeArea}`;
-//     }   
+//     }
 // }
-// calculateVolumeAndArea(15); 
+// calculateVolumeAndArea(15);
 
 // // Место для второй задачи
 // function getCoupeNumber(seat) {
@@ -881,7 +881,7 @@ P.S. Функции вызывать не обязательно*/
 // function getTimeFromMinutes(minutesIncome) {
 //   if(typeof minutesIncome !== 'number' || minutesIncome < 0 || !Number.isInteger(minutesIncome)){
 //     return 'Ошибка, проверьте данные';
-//   } 
+//   }
 //    const hours =  Math.floor(minutesIncome / 60);
 //    const minutes = minutesIncome % 60;
 
@@ -948,7 +948,7 @@ P.S. Функции вызывать не обязательно*/
 //     let hoursStr = '';
 
 //     switch (hours) {
-//         case 0: 
+//         case 0:
 //             hoursStr = 'часов';
 //             break;
 //         case 1:
@@ -1079,7 +1079,7 @@ P.S. Функции вызывать не обязательно*/
 //       console.log(`Свойство ${keyInner} имеет значение ${options[key][keyInner]} `);
 //     }
 //   } else {
-//     console.log(`Свойство ${key} имеет значение ${options[key]} `);  
+//     console.log(`Свойство ${key} имеет значение ${options[key]} `);
 //   }
 
 // }
@@ -1094,9 +1094,9 @@ P.S. Функции вызывать не обязательно*/
 //       counter++;
 //     }
 //   } else {
-//     console.log(`Свойство ${key} имеет значение ${options[key]} `);  
+//     console.log(`Свойство ${key} имеет значение ${options[key]} `);
 //     counter++;
-//   } 
+//   }
 // }
 
 // console.log(counter++);
@@ -1114,21 +1114,21 @@ P.S. Функции вызывать не обязательно*/
 
 //////////////////////////////////////////////
 // 33. Массивы и псевдомассивы
-const arr = [2, 13, 26, 8, 10];
-arr.sort(compareNum);
-console.log(arr);
-
-// Отсортирует числа правильно
-function compareNum(a, b) {
-  return a - b;
-}
-// arr[99] = 0;
-// console.log(arr.length);
+// const arr = [2, 13, 26, 8, 10];
+// arr.sort(compareNum);
 // console.log(arr);
 
-arr.forEach(function (item, i, arr) {
-  console.log(`${i}: ${item} inside array ${arr}`);
-});
+// Отсортирует числа правильно
+// function compareNum(a, b) {
+//   return a - b;
+// }
+// // arr[99] = 0;
+// // console.log(arr.length);
+// // console.log(arr);
+
+// arr.forEach(function (item, i, arr) {
+//   console.log(`${i}: ${item} inside array ${arr}`);
+// });
 
 // // arr.pop();
 // arr.push(10);
@@ -1151,15 +1151,106 @@ arr.forEach(function (item, i, arr) {
 // products.sort();
 // console.log(products.join('; '));
 
+// lesson 35. Передача по ссылке или по значению, Spread оператор (ES6-ES9)
 
 
+// let a = 5,
+//   b = a;
+
+// b = b + 5;
+
+// console.log(b);
+// console.log(a);
 
 
+// const obj = {
+//   a: 5,
+//   b: 1
+// };
+
+// const copy = obj; // Ссылка на obj
+
+// copy.a = 10;
+// console.log(copy);
+// console.log(obj);
+
+function copy(mainObj) {
+  let objCopy = {};
+
+  let key;
+  for (key in mainObj) { // Создает поверхностную копию объекта.
+    objCopy[key] = mainObj[key];
+  }
+  return objCopy;
+}
+
+const numbers = {
+  a: 2,
+  b: 5,
+  c: {
+    x: 7,
+    y: 4,
+  },
+}
+
+const newNumbers = copy(numbers);
+newNumbers.a = 10;
+newNumbers.c.x = 10;
+console.log(newNumbers);
+console.log(numbers);
 
 
+const add = {
+  d: 17,
+  e: 20,
+};
+
+const clone = Object.assign({}, add); // Создаем поверхностный клон объекта add
+clone.d = 20;
+
+// console.log(add);
+// console.log(clone);
 
 
+const oldArray = ['a', 'b', 'c'];
+const newArray = oldArray.slice(); // Копируем старый массив
 
+newArray[1] = 'dasfsadfdsaf';
+console.log(newArray);
+console.log(oldArray);
+
+// Оператор разворота
+const video = ['youtube', 'vimeo', 'rutube'],
+  blogs = ['wordpress', 'livejornal', 'blogger'],
+  internet = [...video, ...blogs, 'vk', 'facebook'];
+
+console.log(internet);
+
+function log(a, b, c) {
+  console.log(a);
+  console.log(b);
+  console.log(c);
+
+};
+
+const num = [2, 5, 7];
+
+log(...num);
+
+
+//Создание поверхностный копий объектов
+const array = ['a', 'b'];
+
+const newAarray = [...array];
+
+const q = {
+  one: 1,
+  two: 2,
+};
+
+const newObj = { ...q };
+
+console.log(newObj);
 
 
 
