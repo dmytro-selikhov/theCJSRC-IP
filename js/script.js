@@ -1174,83 +1174,83 @@ P.S. Функции вызывать не обязательно*/
 // console.log(copy);
 // console.log(obj);
 
-function copy(mainObj) {
-  let objCopy = {};
+// function copy(mainObj) {
+//   let objCopy = {};
 
-  let key;
-  for (key in mainObj) { // Создает поверхностную копию объекта.
-    objCopy[key] = mainObj[key];
-  }
-  return objCopy;
-}
+//   let key;
+//   for (key in mainObj) { // Создает поверхностную копию объекта.
+//     objCopy[key] = mainObj[key];
+//   }
+//   return objCopy;
+// }
 
-const numbers = {
-  a: 2,
-  b: 5,
-  c: {
-    x: 7,
-    y: 4,
-  },
-}
+// const numbers = {
+//   a: 2,
+//   b: 5,
+//   c: {
+//     x: 7,
+//     y: 4,
+//   },
+// }
 
-const newNumbers = copy(numbers);
-newNumbers.a = 10;
-newNumbers.c.x = 10;
-console.log(newNumbers);
-console.log(numbers);
-
-
-const add = {
-  d: 17,
-  e: 20,
-};
-
-const clone = Object.assign({}, add); // Создаем поверхностный клон объекта add
-clone.d = 20;
-
-// console.log(add);
-// console.log(clone);
+// const newNumbers = copy(numbers);
+// newNumbers.a = 10;
+// newNumbers.c.x = 10;
+// console.log(newNumbers);
+// console.log(numbers);
 
 
-const oldArray = ['a', 'b', 'c'];
-const newArray = oldArray.slice(); // Копируем старый массив
+// const add = {
+//   d: 17,
+//   e: 20,
+// };
 
-newArray[1] = 'dasfsadfdsaf';
-console.log(newArray);
-console.log(oldArray);
+// const clone = Object.assign({}, add); // Создаем поверхностный клон объекта add
+// clone.d = 20;
 
-// Оператор разворота
-const video = ['youtube', 'vimeo', 'rutube'],
-  blogs = ['wordpress', 'livejornal', 'blogger'],
-  internet = [...video, ...blogs, 'vk', 'facebook'];
-
-console.log(internet);
-
-function log(a, b, c) {
-  console.log(a);
-  console.log(b);
-  console.log(c);
-
-};
-
-const num = [2, 5, 7];
-
-log(...num);
+// // console.log(add);
+// // console.log(clone);
 
 
-//Создание поверхностный копий объектов
-const array = ['a', 'b'];
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice(); // Копируем старый массив
 
-const newAarray = [...array];
+// newArray[1] = 'dasfsadfdsaf';
+// console.log(newArray);
+// console.log(oldArray);
 
-const q = {
-  one: 1,
-  two: 2,
-};
+// // Оператор разворота
+// const video = ['youtube', 'vimeo', 'rutube'],
+//   blogs = ['wordpress', 'livejornal', 'blogger'],
+//   internet = [...video, ...blogs, 'vk', 'facebook'];
 
-const newObj = { ...q };
+// console.log(internet);
 
-console.log(newObj);
+// function log(a, b, c) {
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+
+// };
+
+// const num = [2, 5, 7];
+
+// log(...num);
+
+
+// //Создание поверхностный копий объектов
+// const array = ['a', 'b'];
+
+// const newAarray = [...array];
+
+// const q = {
+//   one: 1,
+//   two: 2,
+// };
+
+// const newObj = { ...q };
+
+// console.log(newObj);
 
 
 
