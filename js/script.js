@@ -1252,6 +1252,58 @@ P.S. Функции вызывать не обязательно*/
 
 // console.log(newObj);
 
+///////////////////////////////////////////////
+// lesson 36. Основы ООП, прототипно-ориентированное наследование
+
+// let str = 'some';
+// let strObj = new String(str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+// console.dir([1,2,3]);
+
+// const soldier = {
+//   health: 400,
+//   armor: 100,
+//   sayHello: function(){
+//     console.log('Wazaaap, man!');
+//   }
+// };
+
+// // Создаем прототип объекта soldier
+// const jonh = Object.create(soldier);
+
+
+// // jonh.__proto__ = soldier; // Устаревший формат
+
+// // Object.setPrototypeOf(jonh, soldier);
+
+// // console.log(jonh);
+// // console.log(jonh.armor);
+// console.log(jonh.sayHello());
+
+////////////////////////////////////////////////////
+// lesson 37. Практика , ч4. Используем объекты
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
