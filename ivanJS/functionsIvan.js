@@ -130,7 +130,7 @@ P.S. Функции вызывать не обязательно*/
 //     }
 
 //     return str;
-	
+
 // }
 // showProgrammingLangs(personalPlanPeter);
 
@@ -272,32 +272,41 @@ P.S. Функции вызывать не обязательно*/
 
 
 
-const someString = 'This is some strange string';
+// const someString = 'This is some strange string';
 
-function reverse(str) {
-	let reversedStr = '';
+// function reverse(str) {
+//   let reversedStr = '';
 
-	if(typeof str !== 'string'){
-		return "Ошибка!"
-	} else {
+//   if (typeof str !== 'string') {
+//     return "Ошибка!"
+//   } else {
 
-	for(let i = str.length -1; i >= 0; i--){
-		reversedStr+= str[i];
-	}
-	console.log(reversedStr);
-	return reversedStr;
-	}
-}
-reverse(someString)
+//     for (let i = str.length - 1; i >= 0; i--) {
+//       reversedStr += str[i];
+//     }
+//     console.log(reversedStr);
+//     return reversedStr;
+//   }
+// }
+// reverse(someString)
 
-const baseCurrencies = ['USD', 'EUR'];
-const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
-function availableCurr(arr, missingCurr) {
+// function availableCurr(arr, missingCurr) {
+//   let str = '';
+//   arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
 
-}
+//   arr.forEach(function (curr, i) {
+//     if (curr !== missingCurr) {
+//       str += `${curr}\n`;
+//     }
+//   });
 
+//   return str;
 
+// }
+// availableCurr([...baseCurrencies, ...additionalCurrencies], 'CNY')
 
 
 
