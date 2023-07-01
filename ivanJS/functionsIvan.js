@@ -444,54 +444,109 @@ P.S. Функции вызывать не обязательно*/
 // даже если изменяется количество магазинов, высота, 
 // бюджет или подставляется вообще другой объект.
 
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 8,
+//             length: 10
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 500
+// }
 
+// function isBudgetEnough(data) {     
 
-const shoppingMallData = {
-    shops: [
-        {
-            width: 10,
-            length: 5
-        },
-        {
-            width: 15,
-            length: 7
-        },
-        {
-            width: 20,
-            length: 5
-        },
-        {
-            width: 8,
-            length: 10
-        }
-    ],
-    height: 5,
-    moneyPer1m3: 30,
-    budget: 500
-}
+//     let square = 0;     
 
-function isBudgetEnough(data) {     
+//     let fullSize = 0;     
 
-    let square = 0;     
+//     data.shops.forEach(shop => {         
+//     	// Проходим циклом массив shops и вычисляем общую площадь магазинов.
+//     square += shop.width * shop.length     
 
-    let fullSize = 0;     
+//     });     
+//     	// Вычисляем объем торгового центра
+//     fullSize = square * data.height;     
 
-    data.shops.forEach(shop => {         
-    	// Проходим циклом массив shops и вычисляем общую площадь магазинов.
-    square += shop.width * shop.length     
+//      return fullSize * data.moneyPer1m3 > data.budget? 'Бюджета недостаточно' : 'Бюджета достаточно'
+// } 
 
-    });     
-    	// Вычисляем объем торгового центра
-    fullSize = square * data.height;     
+// isBudgetEnough(shoppingMallData);
 
-     return fullSize * data.moneyPer1m3 > data.budget? 'Бюджета недостаточно' : 'Бюджета достаточно'
-} 
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////
+// Задача
 
-   
+// У вас есть список учеников, которые хотят поиграть в игру:
 
-isBudgetEnough(shoppingMallData);
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 
+// 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+// Но команд может быть только 3 по 3 человека. 
+// Напишите функцию sortStudentsByGroups, 
+// которая принимает в себя массив строк.
 
+// Внутри она сначала сортирует имена по алфавиту.
+//  Затем распределяет учеников по 3 человека в 3 группы по алфавитному порядку. 
+//  Эти группы должны быть массивами. Как итог, 
+//  функция возвращает новый массив с тремя командами и строкой как 4й элемент.
 
+// Пример:
+
+// sortStudentsByGroups(students)  =>
+
+// [
+//   [ 'Andrew', 'Ann', 'Bernard' ],
+//   [ 'Cris', 'Josh', 'Mark' ],
+//   [ 'Peter', 'Sam', 'Sandra' ],
+//   'Оставшиеся студенты: Takesi'
+// ]
+// Если убрать одно студента из списка, то результат будет:
+
+// [
+//   [ 'Andrew', 'Ann', 'Bernard' ],
+//   [ 'Cris', 'Josh', 'Mark' ],
+//   [ 'Peter', 'Sam', 'Sandra' ],
+//   'Оставшиеся студенты: -'
+// ]
+// А если добавить одного, то:
+
+// [
+//   [ 'Andrew', 'Ann', 'Bernard' ],
+//   [ 'Cris', 'Josh', 'Mark' ],
+//   [ 'Peter', 'Sam', 'Sandra' ],
+//   'Оставшиеся студенты: Takesi, Somebody'
+// ]
+// То есть, меняется содержимое строки. Все оставшиеся ученики попадают туда.
+
+// Задача интересная, немного заковыристая, 
+// но все необходимое для неё мы уже проходили. 
+// Просто распишите логику действий строка за строкой.
+
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+// function sortStudentsByGroups(arr) {
+// 	arr.sort();
+// 	let arrGroup = [];
+// 		for (let i = 0; i < 3; i++) arrGroup.push(arr.splice(0, 3));
+// 		arrGroup.push(`Оставшиеся студенты: ${!arr.length ? `-` : arr.join(", ")}`);
+// 	return arrGroup;
+// }
 
 
 
