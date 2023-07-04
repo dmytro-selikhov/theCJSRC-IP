@@ -53,6 +53,7 @@
 // lesson 41. Задачи с собеседований на понимание основ
 // UI/UX today
 // Linux today
+// Linux today
 
 
 
