@@ -62,36 +62,36 @@ const adv = document.querySelectorAll('.promo__adv img'),
 	genre = poster.querySelector('.promo__genre'),
 	movieList = document.querySelector('.promo__interactive-list');
 
-// Стрелочная функция
-adv.forEach(item => item.remove());
+// // Стрелочная функция
+// adv.forEach(item => item.remove());
 
-// Обычная функция
-// adv.forEach(function (item){
-// 	item.remove();
+// // Обычная функция
+// // adv.forEach(function (item){
+// // 	item.remove();
+// // })
+
+// // 2) Изменить жанр фильма, поменять "комедия" на "драма"
+// genre.textContent = 'драма';
+
+// // 3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
+// // Реализовать только при помощи JS
+
+// poster.style.backgroundImage = "url('img/bg.jpg')"
+
+
+// // 4) Список фильмов на странице сформировать на основании данных из этого JS файла.
+// // Отсортировать их по алфавиту 
+
+// movieList.innerHTML = "";
+// movieDB.movies.sort();
+
+// movieDB.movies.forEach((film, i) => {
+// 	movieList.innerHTML += `
+// 	<li class="promo__interactive-item">${i + 1} ${film}
+//       <div class="delete"></div>
+//      </li>
+// 	`
 // })
-
-// 2) Изменить жанр фильма, поменять "комедия" на "драма"
-genre.textContent = 'драма';
-
-// 3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
-// Реализовать только при помощи JS
-
-poster.style.backgroundImage = "url('img/bg.jpg')"
-
-
-// 4) Список фильмов на странице сформировать на основании данных из этого JS файла.
-// Отсортировать их по алфавиту 
-
-movieList.innerHTML = "";
-movieDB.movies.sort();
-
-movieDB.movies.forEach((film, i) => {
-	movieList.innerHTML += `
-	<li class="promo__interactive-item">${i + 1} ${film}
-      <div class="delete"></div>
-     </li>
-	`
-})
 
 
 
