@@ -59,6 +59,8 @@
 // lesson 46. Навигация по DOM - элементам, data-атрибуты, преимущество for/of
 // lesson 47. Рекурсия
 // linux today
+// linux today
+
 
 
 
