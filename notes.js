@@ -58,13 +58,7 @@
 // lesson 45. События и их обработчики
 // lesson 46. Навигация по DOM - элементам, data-атрибуты, преимущество for/of
 // lesson 47. Рекурсия
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-
-
+// Coding Exercise 16: (*) Задача на рекурсию
 
 
 
