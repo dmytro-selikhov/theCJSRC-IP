@@ -1439,7 +1439,6 @@ function getTotalProgressByRecurtion(data){
 }
 
 const result = getTotalProgressByRecurtion(students);
-
 console.log(result[0] / result[1]);
 
 

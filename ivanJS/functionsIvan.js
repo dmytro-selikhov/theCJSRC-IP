@@ -661,10 +661,29 @@ P.S. Функции вызывать не обязательно*/
 // const updatedData = transferWaitors(restorantData);
 // console.log(updatedData);
 
+////////////////////////////////////////
+// // Coding Exercise 16: (*) Задача на рекурсию
+// function factorial(n) {
+//   // Проверка на неположительное число
+//   if ( !Number.isInteger(n)) {
+//     return "Ошибка: Факториал может быть вычислен только для положительных целых чисел.";
+//   }
+
+//   // Базовый случай: факториал 0 или 1 равен 1
+//   if (n < 0 || n === 0 || n === 1) {
+//     return 1;
+//   }
+
+//   // Рекурсивный случай: вычисляем факториал числа n,
+//   // умножая его на факториал (n - 1)
+//   return n * factorial(n - 1);
+// }
 
 
-
-
+// // Пример использования функции
+// const number = 5;
+// const factorialResult = factorial(number);
+// console.log(`Факториал числа ${number} равен ${factorialResult}.`);
 
 
 
