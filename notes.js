@@ -62,11 +62,6 @@
 // lesson 48. Практика. Используем события на странице проекта
 // lesson 49. События на мобильных устройствах
 // lesson 50. Async, defer, динамические скрипты
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-
+// lesson 51. Ресурсы для оттачивания навыков программирования
+// lesson 52. Про дополнительную информацию по основам
+// lesson 53. (д) Оператор нулевого слияния (Nullish, ??) ES11
