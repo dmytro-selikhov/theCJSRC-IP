@@ -1352,94 +1352,120 @@ P.S. Функции вызывать не обязательно*/
 // pow(2, 3) // 8
 // pow(2, 4) // 16
 
-let students = {
-    js: [ {
-        name: 'John',
-        progress: 100
-    }, {
-        name: 'Ivan',
-        progress: 60
-    }],
+// let students = {
+//     js: [ {
+//         name: 'John',
+//         progress: 100
+//     }, {
+//         name: 'Ivan',
+//         progress: 60
+//     }],
 
-    html: {
-        basic: [{
-            name: 'Peter',
-            progress: 20
-        }, {
-            name: 'Ann',
-            progress: 18
-        }], 
+//     html: {
+//         basic: [{
+//             name: 'Peter',
+//             progress: 20
+//         }, {
+//             name: 'Ann',
+//             progress: 18
+//         }], 
 
-        pro: [{
-            name: 'Sam',
-            progress: 10
-        }],
+//         pro: [{
+//             name: 'Sam',
+//             progress: 10
+//         }],
 
-        semi: {
-            students: [{
-                name: 'test',
-                progress: 100
-            }]
-        }
-    }
-};
-
-
-function getTotalProgressByIteration(data){
-    let total = 0;
-    let students = 0;
-        // Перебираем значения передаваемого объекта 
-    for (let course of Object.values(data)){
-        if (Array.isArray(course)){ // Если передаваемый объект - массив 
-            students +=course.length;
-                // Высчитываем общий прогресс
-            for(let i = 0; i < course.length; i++){
-                total += course[i].progress;
-            }
-        } else { // Если передаваемый объект - объект, то снова получаем значения свойств объекта 
-            for (let subCourse of Object.values(course)){
-                students +=subCourse.length;
-
-                  for(let i = 0; i < subCourse.length; i++){
-                        total += subCourse[i].progress;
-                    }
-            }
-        }
-    }
-
-    return total / students;
-}
-
-// console.log(getTotalProgressByIteration(students));
+//         semi: {
+//             students: [{
+//                 name: 'test',
+//                 progress: 100
+//             }]
+//         }
+//     }
+// };
 
 
+// function getTotalProgressByIteration(data){
+//     let total = 0;
+//     let students = 0;
+//         // Перебираем значения передаваемого объекта 
+//     for (let course of Object.values(data)){
+//         if (Array.isArray(course)){ // Если передаваемый объект - массив 
+//             students +=course.length;
+//                 // Высчитываем общий прогресс
+//             for(let i = 0; i < course.length; i++){
+//                 total += course[i].progress;
+//             }
+//         } else { // Если передаваемый объект - объект, то снова получаем значения свойств объекта 
+//             for (let subCourse of Object.values(course)){
+//                 students +=subCourse.length;
 
-function getTotalProgressByRecurtion(data){
-     if (Array.isArray(data)){ // Если передаваемый объект - массив 
-            let total = 0;
+//                   for(let i = 0; i < subCourse.length; i++){
+//                         total += subCourse[i].progress;
+//                     }
+//             }
+//         }
+//     }
 
-                // Высчитываем общий прогресс
-            for(let i = 0; i < data.length; i++){
-                total += data[i].progress;
-            }
+//     return total / students;
+// }
 
-            return [total, data.length];
-        } else {
-            let total = [0, 0];
+// // console.log(getTotalProgressByIteration(students));
 
-            for( let subData of Object.values(data)){
-               const subDataArr = getTotalProgressByRecurtion(subData);
-               total[0] += subDataArr[0];
-               total[1] += subDataArr[1];
-            }
 
-            return total;
-        } 
 
-}
+// function getTotalProgressByRecurtion(data){
+//      if (Array.isArray(data)){ // Если передаваемый объект - массив 
+//             let total = 0;
 
-const result = getTotalProgressByRecurtion(students);
-console.log(result[0] / result[1]);
+//                 // Высчитываем общий прогресс
+//             for(let i = 0; i < data.length; i++){
+//                 total += data[i].progress;
+//             }
+
+//             return [total, data.length];
+//         } else {
+//             let total = [0, 0];
+
+//             for( let subData of Object.values(data)){
+//                const subDataArr = getTotalProgressByRecurtion(subData);
+//                total[0] += subDataArr[0];
+//                total[1] += subDataArr[1];
+//             }
+
+//             return total;
+//         } 
+
+// }
+
+// const result = getTotalProgressByRecurtion(students);
+// console.log(result[0] / result[1]);
+
+
+
+
+
+///////////////////////////////
+// nullish - ??
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
