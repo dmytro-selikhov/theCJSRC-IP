@@ -73,8 +73,8 @@
 // lesson 59. (*) Map
 // lesson 60. (*) Set
 // lesson 61. (*) BigInt
-
-
+// Coding Exercise 17: (**) Сложная задача на вычисление количества страниц
+// Coding Exercise 18: (**) Сложная задача на работу со строками
 
 
 

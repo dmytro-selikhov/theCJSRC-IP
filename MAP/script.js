@@ -73,13 +73,13 @@
 
 ////////////////////////////////////////////$Recycle.Bin
 // Set
-const arr = ['Alex', 'Ann', 'Oleg', 'Alex', 'Alex', 'Ann', 'Alex'];
+// const arr = ['Alex', 'Ann', 'Oleg', 'Alex', 'Alex', 'Ann', 'Alex'];
 
-function unique(arr) {
-  return Array.from(new Set(arr));
-}
+// function unique(arr) {
+//   return Array.from(new Set(arr));
+// }
 
-console.log(unique(arr));
+// console.log(unique(arr));
 // const set = new Set(arr);
 // set.add('Dimas');
 // set.add('Oleg');
@@ -101,4 +101,21 @@ console.log(unique(arr));
 // console.log(set.values());
 // console.log(set.keys());
 // console.log(set.entries());
+
+//////////////////////////////////////////////////
+// BigInt
+
+// const bigint = 231545145416143616146134631346143614614616143614136n;
+
+const sameBigint = BigInt(231545145416143616146134631346143614614616143614136);
+
+// console.log(typeof (bigint));
+
+
+
+let bigint = 1n;
+let number = 2;
+
+console.log(bigint + BigInt(number));
+console.log(Number(bigint) + number);
 
