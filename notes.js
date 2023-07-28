@@ -80,6 +80,7 @@
 // lesson 64. Создаем табы в новом проекте
 // lesson 65. Скрипты и время их выполнения. setTimeout и setInterval
 // lesson 66. (д) Сборщик мусора и утечки памяти
+// lesson 67. (*) WeakMap и WeakSet
 
 
 
