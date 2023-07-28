@@ -40,3 +40,21 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+
+
+// 65. Скрипты и время их выполнения. setTimeout и setInterval
+
+// const timerId = setTimeout(function () {
+//   console.log('Hello!');
+// }, 2000);
+
+
+
+
+
+
+
+
+
