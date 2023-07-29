@@ -49,49 +49,95 @@
 // user = null;
 
 // console.log(map.has(user));
-// WeakMap
-let cache = new WeakMap();
+// // WeakMap
+// let cache = new WeakMap();
 
-function cahcheUser(user){
-  if (!cache.has(user)){
-    cache.set(user, Date.now());
-  }
+// function cahcheUser(user){
+//   if (!cache.has(user)){
+//     cache.set(user, Date.now());
+//   }
 
-  return cache.get(user);
-}
+//   return cache.get(user);
+// }
 
-let lena = {name: 'Elena'};
-let alex = {name: 'Alex'};
+// let lena = {name: 'Elena'};
+// let alex = {name: 'Alex'};
 
-cahcheUser(lena);
-cahcheUser(alex);
-
-
-lena = null;
-
-console.log(cache.has(lena));
-console.log(cache.has(alex));
+// cahcheUser(lena);
+// cahcheUser(alex);
 
 
-////////////////////////////////
-// WeakSet() 
-// add, has, delete
+// lena = null;
 
-let messages = [
-  {text: 'Hello', from: 'John'},
-  {text: 'World', from: 'Alex'},
-  {text: '....', from: 'M'},
-];
+// console.log(cache.has(lena));
+// console.log(cache.has(alex));
 
-let readMessages = new WeakSet();
 
-readMessages.add(messages[0]);
-// readMessages.add(messages[1]);
+// ////////////////////////////////
+// // WeakSet() 
+// // add, has, delete
 
-readMessages.add(messages[0]);
+// let messages = [
+//   {text: 'Hello', from: 'John'},
+//   {text: 'World', from: 'Alex'},
+//   {text: '....', from: 'M'},
+// ];
 
-messages.shift();
-console.log(readMessages.has(messages[0]));
+// let readMessages = new WeakSet();
+
+// readMessages.add(messages[0]);
+// // readMessages.add(messages[1]);
+
+// readMessages.add(messages[0]);
+
+// messages.shift();
+// console.log(readMessages.has(messages[0]));
+
+// /////////////////////////////////////////////
+
+// lesson 68. Работа с датами
+// const now = new Date('2020-05-01');
+// new Date.parse('2020-05-01');
+
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getHours());
+// console.log(now.getMinutes());
+// console.log(now.getSeconds());
+// console.log(now.getMilliseconds());
+// console.log(now.getUTCHours());
+
+// console.log(now.getTimezoneOffset());
+// console.log(now.getTime());
+
+// console.log(now.setHours(40));
+// console.log(now);
+
+// let start = new Date();
+
+// for (let i = 0; i < 100000; i++){
+//   let some = i ** 3;
+// }
+
+// let end = new Date();
+
+// alert(`Цикл отработал за ${end - start} миллисекунд`)
+
+//////////////////////////////////////////
+// lesson 69. Создаем таймер обратного отсчета на сайте
+
+
+
+
+
+
+
+
+
+
+
 
 
 
