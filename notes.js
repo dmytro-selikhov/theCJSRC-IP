@@ -87,7 +87,7 @@
 // lesson 71. Параметры документа, окна и работа с ними
 // lesson 72. Создаем модальное окно
 // lesson 73. Модификации модального окна
-
+// lesson 74. (д) MutationObserver, ResizeObserver и contenteditable
 
 
 
