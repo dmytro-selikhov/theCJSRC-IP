@@ -88,6 +88,8 @@
 // lesson 72. Создаем модальное окно
 // lesson 73. Модификации модального окна
 // lesson 74. (д) MutationObserver, ResizeObserver и contenteditable
+// lesson 75. Функции-конструкторы
+// lesson 76. Контекст вызова. This
 
 
 
