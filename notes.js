@@ -90,6 +90,7 @@
 // lesson 74. (д) MutationObserver, ResizeObserver и contenteditable
 // lesson 75. Функции-конструкторы
 // lesson 76. Контекст вызова. This
+// lesson 77. Классы (ES6)
 
 
 
