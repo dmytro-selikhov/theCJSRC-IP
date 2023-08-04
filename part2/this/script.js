@@ -68,28 +68,68 @@
 // 4) Ручная привязка this: call, apply и bind
 
 
-const btn = document.querySelector('button');
+// const btn = document.querySelector('button');
 
-// btn.addEventListener('click', function () {
-//   this.style.backgroundColor = 'pink';
+// // btn.addEventListener('click', function () {
+// //   this.style.backgroundColor = 'pink';
+// // });
+
+// btn.addEventListener('click', (e) => {
+//   e.target.style.backgroundColor = 'pink';
 // });
 
-btn.addEventListener('click', (e) => {
-  e.target.style.backgroundColor = 'pink';
-});
+// const obj = {
+//   num: 5,
+//   sayNumber: function () {
+//     const say = () => {
+//       console.log(this.num);
+//     };
 
-const obj = {
-  num: 5,
-  sayNumber: function () {
-    const say = () => {
-      console.log(this.num);
-    };
+//     say();
+//   }
+// };
 
-    say();
+// obj.sayNumber();
+
+// const double = (a, b) => a * 2;
+// console.log(double(4));
+
+
+// lesson 77. Классы (ES6)
+
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
   }
-};
 
-obj.sayNumber();
+  calcArea() {
+    return this.height * this.width;
+  }
+}
 
-const double = (a, b) => a * 2;
-console.log(double(4));
+class ColoredRectangleWithText extends Rectangle {
+  constructor(height, width, text, bgColor) {
+    super(height, width);
+    this.text = text;
+    this.bgColor = bgColor;
+  }
+
+  showMyProps() {
+    console.log(`Text: ${this.text}, color: ${this.bgColor}`);
+  }
+}
+
+const div = new ColoredRectangleWithText(25, 10, 'Hello World', 'red');
+console.log(div);
+console.log(div.calcArea());
+
+// const square = new Rectangle(10, 10);
+// const long = new Rectangle(20, 100);
+
+// console.log(square.calcArea());
+// console.log(long.calcArea());
+
+
+
+
