@@ -140,18 +140,41 @@
 
 // lesson 80. Rest оператор и параметры по умолчанию (ES6)
 
+// const log = function(a, b, ...rest){
+//   console.log(a, b, rest);
+// }
 
-const log = function(a, b, ...rest){
-  console.log(a, b, rest);
-}
-
-log('basic', 'rest', 'operator', 'usage');
+// log('basic', 'rest', 'operator', 'usage');
 
 
-function calcOrDouble(number, basis){
-  basis = basis || 2;
-  console.log(number * basis);
-}
+// function calcOrDouble(number, basis){
+//   basis = basis || 2;
+//   console.log(number * basis);
+// }
 
-calcOrDouble(3, 5);
-calcOrDouble(3);
+// calcOrDouble(3, 5);
+// calcOrDouble(3);
+
+
+// lesson 82. JSON формат передачи данных, глубокое клонирование объектов
+
+const person = {
+  name: 'Alex',
+  tel: '+4777777777',
+  parents: {
+    mom: 'Olga',
+    dad: 'Mike'
+  }
+};
+
+const clone = JSON.parse(JSON.stringify(person));
+
+console.log(person);
+
+clone.parents.mom = 'Ann';
+console.log(clone);
+
+
+
+
+
