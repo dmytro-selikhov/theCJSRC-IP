@@ -100,19 +100,7 @@
 // lesson 84. Реализация скрипта отправки данных на сервер
 // Linux today
 // Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
-// Linux today
+
 
 
 
