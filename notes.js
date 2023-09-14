@@ -99,22 +99,6 @@
 // lesson 83. AJAX и общение с сервером
 // lesson 84. Реализация скрипта отправки данных на сервер
 // lesson 85. Красивое оповещение пользователя
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
-// linux today
+// Jira today
+// Jira today
+// Jira today
