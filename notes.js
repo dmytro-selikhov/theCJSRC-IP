@@ -1,4 +1,4 @@
-рш// lesson 1. Как проходить данный курс
+// lesson 1. Как проходить данный курс
 // lesson 2. Почему этот курс?
 // lesson 3. Условные обозначения и материалы
 // lesson 4. Настройка рабочего пространства
@@ -99,17 +99,6 @@
 // lesson 83. AJAX и общение с сервером
 // lesson 84. Реализация скрипта отправки данных на сервер
 // lesson 85. Красивое оповещение пользователя
-// Jira today
-// Jira today
-// Jira today
-// Jira today
-// Jira today
-// Jira today
-// Jira today
-// Jira today
-// Jira today
-// Jira today
-// Jira today
 // Jira today
 // Jira today
 // Jira today
